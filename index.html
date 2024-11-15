@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NetStat Technologies Blog App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header">
+      <a href="index.html" class="logo">NetStat Technologies</a>
+      <nav class="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="categories.html">Categories</a>
+        <a href="addBlog.html">Add Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home">
+      <div class="home-content">
+        <div class="search">
+          <input
+            type="text"
+            placeholder="Search what you need to know"
+            id="search-input"
+          />
+          <button id="search-button">Search</button>
+        </div>
+        <div class="welcome">
+          <h2>Welcome to Our Blogging Platform</h2>
+          <p>
+            Discover, share, and create amazing blog posts. Explore categories
+            or start your own blog journey today!
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- contact section -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Us!</span></h2>
+        <form action="#">
+          <div class="input-box">
+            <input type="text" placeholder="Enter your full name" required />
+            <input type="email" placeholder="Enter your email" required />
+          </div>
+          <div class="input-box">
+            <input type="number" placeholder="Enter your number" required />
+            <input type="text" placeholder="Email Subject" required />
+          </div>
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Enter your message"
+            required
+          ></textarea>
+          <input type="submit" value="Send Message" class="btn" />
+        </form>
+      </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-about">
+          <a href="#" class="footer-logo">NetStat Technologies</a>
+          <p class="footer-description">
+            The premier blog platform for sharing, creating, and discovering new
+            ideas. Join us today!
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="addBlog.html">Add Blog</a></li>
+            <li><a href="search.html">Search</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+              </ul>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Copyright &copy; 2024 NetStat Technologies | All Rights Reserved.</p>
+        <div class="footer-iconTop">
+          <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
