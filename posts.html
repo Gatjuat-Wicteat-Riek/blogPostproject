@@ -17,7 +17,7 @@
   <body>
     <!-- Header Section -->
     <header class="header">
-      <a href="index.html" class="logo">NetStat Technologies</a>
+      <a href="index.html" class="logo">NetStat <span  class="header_span">Technologies</span></a>
       <nav class="navbar">
         <a href="index.html" class="active">Home</a>
         <a href="about.html">About</a>
@@ -28,66 +28,18 @@
       </nav>
     </header>
 
-   <section class="posts">
-    <div class="page-container">
-    <h1 class="page-heading">Our Latest Posts</h1>
-    <p class="intro">Explore our most recent articles on a variety of exciting topics!</p>
-
-    <!-- Sample Post -->
-    <div class="blog-item">
-      <div class="blog-meta">
-        <span class="category">Category: Technology</span>
-        <h3 class="blog-title">How to Build a Full-Stack Web Application</h3>
+    <section class="posts">
+      <div class="page-container">
+        <h1 class="page-heading">Our Latest Posts</h1>
+        <p class="intro">Explore our most recent articles on a variety of exciting topics!</p>
+    
+        <!-- Dynamic Posts Wrapper -->
+        <div id="posts-wrapper">
+          <!-- Posts will be dynamically injected here -->
+        </div>
       </div>
-      <p class="blog-desc">
-        In this article, we walk you through the steps to build a full-stack 
-        web application using the MERN stack...
-      </p>
-      <div class="post-actions">
-        <button class="edit-btn">Edit</button>
-        <button class="delete-btn">Delete</button>
-        <button class="comment-btn">Comment</button>
-        <a href="full-post.html" class="read-more-btn">Read More</a>
-      </div>
-    </div>
-
-    <!-- Sample Post -->
-    <div class="blog-item">
-      <div class="blog-meta">
-        <span class="category">Category: Travel</span>
-        <h3 class="blog-title">Top 10 Destinations to Visit in 2024</h3>
-      </div>
-      <p class="blog-desc">
-        Ready to travel? Here are the top 10 destinations you must 
-        consider for your next trip in 2024...
-      </p>
-      <div class="post-actions">
-        <button class="edit-btn">Edit</button>
-        <button class="delete-btn">Delete</button>
-        <button class="comment-btn">Comment</button>
-        <a href="full-post.html" class="read-more-btn">Read More</a> 
-      </div>
-    </div>
-
-    <!-- Sample Post -->
-    <div class="blog-item">
-      <div class="blog-meta">
-        <span class="category">Category: Health and Fitness</span>
-        <h3 class="blog-title">5 Easy Exercises to Stay Fit at Home</h3>
-      </div>
-      <p class="blog-desc">
-        No gym? No problem! Learn the top 5 easy exercises to stay fit
-         and healthy right at home...
-      </p>
-      <div class="post-actions">
-        <button class="edit-btn">Edit</button>
-        <button class="delete-btn">Delete</button>
-        <button class="comment-btn">Comment</button>
-        <a href="full-post.html" class="read-more-btn">Read More</a> 
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
+    
 
      <!-- Footer Section -->
     <footer class="footer">
@@ -129,7 +81,7 @@
           </div>
         </div>
       </footer>
-      <script src="styles.js">
+      <script src="styles.js" defer>
       </script>
   </body>
 </html>

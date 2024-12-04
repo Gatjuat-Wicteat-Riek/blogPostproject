@@ -1,0 +1,43 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Full Post</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-container">
+      <div class="full-post">
+        <h1 id="post-title"></h1>
+        <span id="post-category"></span>
+        <p id="post-content"></p>
+        <a href="index.html" class="btn-back">Go Back</a>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const selectedBlog = JSON.parse(localStorage.getItem("selectedBlog"));
+
+        console.log("Retrieved Blog:", selectedBlog); // Debugging
+
+        if (selectedBlog) {
+          document.getElementById("post-title").innerText =
+            selectedBlog.subject;
+          document.getElementById(
+            "post-category"
+          ).innerText = `Category: ${selectedBlog.category}`;
+          document.getElementById("post-content").innerText =
+            selectedBlog.content;
+        } else {
+          console.error("No selected blog found in localStorage.");
+          document.querySelector(".full-post").innerHTML =
+            "<p>Sorry, this post is not available. Please try again.</p>";
+        }
+      });
+    </script>
+  </body>
+</html>
