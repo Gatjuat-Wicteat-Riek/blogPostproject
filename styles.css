@@ -1,4 +1,9 @@
-/* Global Styles */
+/**
+ * Global Styles
+ *
+ * @format
+ */
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 * {
   margin: 0;
@@ -20,6 +25,7 @@
   --shadow-color: rgba(0, 0, 0, 0.2);
   --footer-hover: #5ad1cd;
   --header-color: #660c9d;
+  --color-red: #f5311c;
 }
 
 body {
@@ -48,6 +54,9 @@ body {
   color: #754ef9;
   font-weight: 600;
 }
+.header_span {
+  color: orangered;
+}
 
 .navbar a {
   color: #333;
@@ -70,6 +79,9 @@ body {
   padding: 8rem 7% 4rem;
   text-align: center;
 }
+/* .home-content {
+  max-width: 80%;
+} */
 
 .home-content .search {
   margin-bottom: 2rem;
@@ -104,16 +116,20 @@ input:focus {
 }
 
 /* Welcome Section */
+/* .welcome {
+  margin-bottom: 1rem;
+} */
 .welcome h2 {
   font-size: 2.2rem;
-  color: #333;
+  color: var(--main-color);
   margin-bottom: 1rem;
 }
 
 .welcome p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #555;
 }
+
 /* Contact Section */
 .contact {
   padding: 3rem 7%;
@@ -323,5 +339,318 @@ footer {
 
 .footer-iconTop a i {
   font-size: 1.5rem;
+  color: var(--main-color);
+}
+
+/* ABOUT */
+.about-container {
+  padding: 3rem 7%;
+  text-align: center;
+}
+
+.page-heading {
+  margin-top: 2rem;
+  text-align: center;
+  color: var(--main-color);
+}
+
+.intro-about {
+  text-align: center;
+}
+.intro-about {
+  color: var(--text-color);
+  font-size: 1.2rem;
+}
+.section-heading {
+  color: var(--main-color);
+  padding: 0.5rem;
+}
+
+.page-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.margin-top {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+p strong {
+  color: var(--main-color);
+}
+.topics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.topics span {
+  background-color: #fff;
+  text-align: center;
+  padding: 0.5rem;
+  box-shadow: 0 0 0.5rem 0.3rem #00000013;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+.topics span:hover {
+  box-shadow: var(--text-color);
+}
+
+/* ADD BLOG PAGE */
+section .blog {
+  padding: 3% 7%;
+}
+.blog-heading {
+  margin-top: 2rem;
+  color: var(--main-color);
+}
+.form {
+  text-align: center;
+  max-width: 40rem;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 0 0.5rem 0.3rem #0000000c;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+input {
+  padding: 0.4rem 2rem;
+  background-color: rgba(211, 211, 211, 0.263);
+}
+
+select {
+  padding: 0.4rem 1rem;
+  margin-top: 1rem;
+  width: 100%;
+  background-color: rgba(211, 211, 211, 0.178);
+}
+
+.input-align input,
+.input-align select {
+  padding: 1rem 1rem;
+  box-shadow: 0 0 0.5rem 0.2rem var(--shadow-color);
+  background-color: #fff;
+  border-radius: 0.8rem;
+  font-size: 1rem;
+}
+
+textarea {
+  width: 100%;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: rgba(211, 211, 211, 0.263);
+}
+
+.input-align {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.btn-add {
+  padding: 0.7rem 2rem;
+  background-color: var(--main-color);
+  color: #fff;
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 0.3rem;
+  font-size: 0.9rem;
+  font-style: bold;
+}
+
+.modify-heading-add-blog {
+  margin-bottom: 0;
+}
+
+/* CATEGORIES SECTION */
+.categories {
+  padding: 3rem 7%;
+  background-color: var(--bg-color);
+}
+.container {
+  padding: 3rem 7%;
+}
+
+.categories-heading {
+  padding-top: 3%;
+  text-align: center;
+  font-size: 2rem;
+  color: var(--main-color);
+  margin-bottom: 1.5rem;
+}
+
+.categories-para {
+  text-align: center;
+  font-size: 1.4rem;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+  line-height: 1.4;
+}
+
+/* Category List */
+.category-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.category-item {
+  background: var(--white-color);
+  padding: 1.5rem;
+  border-radius: 0.8rem;
+  text-align: center;
+  box-shadow: 0 0.1rem 0.4rem var(--shadow-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0.3rem 1rem var(--main-color);
+}
+
+.category-item h3 {
+  font-size: 1.2rem;
+  color: var(--main-color);
+  margin-bottom: 0.8rem;
+}
+
+.category-item p {
+  font-size: 1rem;
+  color: var(--text-color);
+  line-height: 1.4;
+}
+/* Posts Section */
+.posts {
+  padding: 3rem 7%;
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Page Heading */
+.page-heading {
+  text-align: center;
+  color: var(--main-color);
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Intro Text */
+.intro {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #666;
+  margin-bottom: 3rem;
+}
+
+/* Blog Item */
+.blog-item {
+  background: #fff;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0.3rem 1rem var(--shadow-color);
+}
+
+/* Blog Meta (Category and Title) */
+.blog-meta {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.category {
+  font-size: 1rem;
+  color: #007bff;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.blog-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Blog Description */
+.blog-desc {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Post Action Buttons */
+.post-actions {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.edit-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.5s ease;
+}
+.delete-btn {
+  background-color: var(--color-red);
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+.comment-btn {
+  background-color: hsl(174, 100%, 50%);
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.5s ease;
+}
+.comment-btn {
+  background-color: hwb(200 26% 4%);
+}
+.edit-btn:hover {
+  background-color: hsl(228, 90%, 61%);
+}
+.delete-btn:hover {
+  background-color: #b3003c;
+}
+
+/* Read More Button */
+.read-more-btn {
+  color: #28a745;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: all 0.5s ease;
+}
+
+.read-more-btn:hover {
   color: var(--main-color);
 }
